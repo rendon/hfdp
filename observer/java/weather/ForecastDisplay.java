@@ -6,7 +6,7 @@ public class ForecastDisplay implements Observer, DisplayElement {
 
     public ForecastDisplay(Subject weatherData) {
         this.weatherData = weatherData;
-        weatherData.registerObserver(this);
+        this.weatherData.registerObserver(this);
     }
 
     public void update(float t, float h, float p) {

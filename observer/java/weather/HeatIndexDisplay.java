@@ -4,7 +4,7 @@ public class HeatIndexDisplay implements Observer, DisplayElement {
 
     public HeatIndexDisplay(Subject weatherData) {
         this.weatherData = weatherData;
-        weatherData.registerObserver(this);
+        this.weatherData.registerObserver(this);
     }
 
     public void update(float t, float h, float p) {
